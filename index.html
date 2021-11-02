@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Регистрация</title>
+</head>
+
+<body>
+  <form action="/" method="post">
+    {{message}}
+    <div class="row"><input name="firstName" placeholder="Имя"></div>
+    <div class="row"><input name="lastName" placeholder="Фамилия"></div>
+    <div class="row"><input name="email" type="email" placeholder="Email"></div>
+    <div class="row"><input name="password" type="password" placeholder="Пароль"></div>
+    <div class="row"><input name="passwordRepeat" type="password" placeholder="Подтверждение пароля"></div>
+    <label for="birthDate">Дата рождения:</label>
+    <div class="row"><input name="birthDate" type="date"></div>
+    <div class="row"><input type="submit" value="Отправить"></div>
+  </form>
+</body>
+
+</html>

@@ -1,0 +1,25 @@
+{
+  "name": "test_task_registration_form",
+  "version": "1.0.0",
+  "description": "Страница с формой регистрации с валидацией",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/robotrainer/test_task_registration_form.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/robotrainer/test_task_registration_form/issues"
+  },
+  "homepage": "https://github.com/robotrainer/test_task_registration_form#readme",
+  "dependencies": {
+    "@types/node": "^16.11.6",
+    "express": "^4.17.1",
+    "express-session": "^1.17.2"
+  },
+  "type": "module"
+}
