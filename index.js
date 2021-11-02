@@ -2,7 +2,6 @@ import fs from "fs";
 import path from "path";
 import express from "express";
 import session from "express-session";
-import { constants } from "buffer";
 const __dirname = path.resolve();
 
 const PORT = process.env.PORT || '3000';
@@ -25,10 +24,10 @@ app.get("/", (req, res) => {
   let html = fs.readFileSync(path.join(__dirname, "index.html")).toString();
   if (req.session.passwordMissmath) {
     delete req.session.passwordMissmath;
-    html = html.replace(`{{message}}`, `<div class="row invalid">Пароли не совпадают</div>`)
+    html = html.replace(`{message}`, `<div class="row invalid">Пароли не совпадают</div>`)
   }
   else {
-    html = html.replace(`{{message}}`, ``);
+    html = html.replace(`{message}`, ``);
   }
   res.setHeader("Content-Type", "text/html");
   res.end(html);
